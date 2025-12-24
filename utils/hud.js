@@ -157,7 +157,7 @@ export class Hud {
     if (!this.hudManager.isEditing) {
       if (skyblockOnly) {
         if (
-          Server.getIP().includes('hypixel') &&
+          (Server.getIP().includes('hypixel') || Server.getIP().includes('overlag')) &&
           ChatLib.removeFormatting(Scoreboard.getTitle()).includes('SKYBLOCK')
         ) {
           GlStateManager.func_179147_l();

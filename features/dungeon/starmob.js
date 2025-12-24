@@ -3,6 +3,7 @@ import settings from '../../settings';
 import { registerWhen } from '../../utils/register';
 
 const starMobRegex = /^§?.?.\s?§6✯ (?:§.)*(.+)§r.+§c❤$|^(Shadow Assassin)$/;
+const starMobsRegex = /^.*[✯✰].*❤$/;
 
 let renderMobs = [];
 
@@ -10,7 +11,7 @@ registerWhen(
   register('step', () => {
     renderMobs = [];
     World.getAllEntities().forEach((e) => {
-      const match = e.getName().match(starMobRegex);
+      const match = e.getName().match(starMobsRegex);
       if (!match) return;
       renderMobs.push(e);
     });

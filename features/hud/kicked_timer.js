@@ -17,7 +17,7 @@ registerWhen(
       joinedOnce = true;
       kickTime = 0;
     } else if (
-      Server.getIP().includes('hypixel') &&
+      (Server.getIP().includes('hypixel') || Server.getIP().includes('overlag')) &&
       ChatLib.removeFormatting(Scoreboard.getTitle()).includes('PROTOTYPE')
     ) {
       kickTime++;

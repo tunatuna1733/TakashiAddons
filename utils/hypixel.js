@@ -1,5 +1,5 @@
 export const isInSkyblock = () => {
-  if (Server.getIP().includes('hypixel') && ChatLib.removeFormatting(Scoreboard.getTitle()).includes('SKYBLOCK'))
+  if ((Server.getIP().includes('hypixel') || Server.getIP().includes('overlag')) && ChatLib.removeFormatting(Scoreboard.getTitle()).includes('SKYBLOCK'))
     return true;
   return false;
 };

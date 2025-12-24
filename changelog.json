@@ -1,4 +1,8 @@
 {
+  "0.1.1": [
+    "Added dragonfly to pest box feature.",
+    "Fixed star mob box."
+  ],
   "0.1.0": [
     "Goodbye Takeshi, hello Takashi!"
   ]
