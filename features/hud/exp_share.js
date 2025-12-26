@@ -97,7 +97,12 @@ registerWhen(
     }
     expShareData.forEach((d) => {
       displayText += `${getRarityPrefix(d.tier)}${d.name}: &a${d.level} LVL\n`;
-      displayText += `&e  ${formatNumToCoin(Math.trunc(d.currentExp))}/${formatNumToCoin(Math.trunc(d.currentExp + d.expToNextLevel))} XP\n`;
+      if (d.level === 100 || d.level === 200) {
+        displayText += `&e  Total: ${formatNumToCoin(Math.trunc(d.totalExp))}\n`;
+        return;
+      } else {
+        displayText += `&e  ${formatNumToCoin(Math.trunc(d.currentExp))}/${formatNumToCoin(Math.trunc(d.currentExp + d.expToNextLevel))} XP\n`;
+      }
     });
     expShareHud.draw(displayText);
   }),
