@@ -1,4 +1,8 @@
 {
+  "0.1.2": [
+    "Added fever timer.",
+    "Added exp share hud."
+  ],
   "0.1.1": [
     "Added dragonfly to pest box feature.",
     "Fixed star mob box."

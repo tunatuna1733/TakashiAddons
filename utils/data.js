@@ -149,6 +149,16 @@ const defaultData = {
     y: 0.3,
     scale: 1,
   },
+  fevertimer: {
+    x: 0.7,
+    y: 0.5,
+    scale: 1,
+  },
+  expshare: {
+    x: 0.9,
+    y: 0.7,
+    scale: 1.5,
+  },
 };
 
 const defaultGardenData = {
@@ -168,6 +178,7 @@ export let data = new PogObject('TakashiAddons', defaultData, 'data.json');
 export let gardenData = new PogObject('TakashiAddons', defaultGardenData, 'garden.json');
 export let inventoryData = new PogObject('TakashiAddons', {}, 'inventory.json');
 export let customHudsData = new PogObject('TakashiAddons', { data: [] }, 'customhuds.json');
+export let petData = new PogObject('TakashiAddons', { shareIds: [] }, 'petdata.json');
 
 export const resetData = () => {
   Object.keys(defaultData).forEach((k) => {

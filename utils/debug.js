@@ -11,20 +11,18 @@ register('command', () => {
 }).setCommandName('debugarmorstandheads');
 
 register('command', () => {
-  World.getAllEntitiesOfType(
-    Java.type("net.minecraft.entity.item.EntityArmorStand").class,
-  ).forEach((armorStand) => {
-    ChatLib.chat(
-      `${armorStand.getName()}`,
-    );
-    ChatLib.chat(
-      `${armorStand.getName().toString()}`,
-    )
+  World.getAllEntitiesOfType(Java.type('net.minecraft.entity.item.EntityArmorStand').class).forEach((armorStand) => {
+    ChatLib.chat(`${armorStand.getName()}`);
+    ChatLib.chat(`${armorStand.getName().toString()}`);
     ChatLib.chat(
       `${armorStand.getX()}, ${armorStand.getY()}, ${armorStand.getZ()}, ${armorStand.getWidth()}, ${armorStand.getHeight()}`,
     );
   });
 }).setCommandName('debugarmorstands');
+
+register('command', () => {
+  ChatLib.chat(Player.getUUID());
+}).setCommandName('debuguuid');
 
 /*
 register("command", () => {

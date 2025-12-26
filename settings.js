@@ -294,6 +294,14 @@ class Settings {
   pesttitle = false;
 
   @SwitchProperty({
+    name: 'Fever Timer',
+    description: 'Shows a timer for fever duration.',
+    category: 'Garden',
+    subcategory: 'Fever Timer'
+  })
+  fevertimer = false;
+
+  @SwitchProperty({
     name: 'Feeder Timer',
     description: 'Shows a timer for Caducous Feeder cooldown.',
     category: 'Others',
@@ -380,6 +388,14 @@ class Settings {
     subcategory: 'Star Mob'
   })
   starmob = false;
+
+  @SwitchProperty({
+    name: 'Exp Share HUD',
+    description: 'Display exp share pet status',
+    category: 'HUD',
+    subcategory: 'Pet'
+  })
+  expsharehud = false;
 
   constructor() {
     this.initialize(this);
