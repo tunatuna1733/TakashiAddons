@@ -179,6 +179,7 @@ export let gardenData = new PogObject('TakashiAddons', defaultGardenData, 'garde
 export let inventoryData = new PogObject('TakashiAddons', {}, 'inventory.json');
 export let customHudsData = new PogObject('TakashiAddons', { data: [] }, 'customhuds.json');
 export let petData = new PogObject('TakashiAddons', { shareIds: [] }, 'petdata.json');
+export let partyWhitelist = new PogObject('TakashiAddons', { uuids: [] }, 'partywhitelist.json');
 
 export const resetData = () => {
   Object.keys(defaultData).forEach((k) => {

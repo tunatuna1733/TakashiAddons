@@ -397,6 +397,13 @@ class Settings {
   })
   expsharehud = false;
 
+  @SwitchProperty({
+    name: 'Auto accept party',
+    description: 'Automatically accept party invites from whitelisted players',
+    category: 'Others',
+  })
+  autoacceptparty = false;
+
   constructor() {
     this.initialize(this);
     this.setCategoryDescription('HUD', 'A lot of Overlays');

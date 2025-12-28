@@ -4,5 +4,6 @@ inventory.json
 bestiary.json
 customhuds.json
 petdata.json
+partywhitelist.json
 config.toml
 biome.json

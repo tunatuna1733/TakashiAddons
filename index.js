@@ -44,6 +44,7 @@ import './features/mining/powder';
 import './features/mining/glacite';
 
 import './features/misc/norevminion';
+import './features/misc/party';
 
 import './utils/debug';
 
